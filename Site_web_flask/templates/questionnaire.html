@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questionnaire sur les sites web</title>
+        <style>
+
+            body {
+                background-color: #F0F0F0;
+            }
+
+            h1 {
+                color:darkblue;
+                display: flex;
+                justify-content: center;
+            }
+
+            a {
+                color: purple;
+            }
+            p{
+                font-weight:bold;
+            }
+
+            .container {
+                border: 1px solid rgba(23, 27, 145, 0.4); 
+                padding: 20px; 
+                box-shadow: 0 0 20px rgba(23, 27, 145, 0.4);           
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Questionnaire sur les sites web</h1>
+        <div class="container">
+
+            <form action="/verifier" method="post">
+                <p>Question 1 : Qu'est-ce qu'un site web ?</p>
+                <input type="text" name="reponse1" required>
+    
+                <p>Question 2 : Quels sont les langages de programmation utilisés pour créer des sites web ?</p>
+                <input type="text" name="reponse2" required>
+    
+                <p>Question 3 : Qu'est-ce que HTML ?</p>
+                <input type="text" name="reponse3" required>
+    
+                <p>Question 4 : Qu'est-ce que CSS ?</p>
+                <input type="text" name="reponse4" required>
+    
+                <p>Question 5 : Qu'est-ce que JS ?</p>
+                <input type="text" name="reponse5" required>
+    
+                <br><br>
+                <input type="submit" value="Soumettre">
+            </form>
+        </div>
+        
+    </body>
+</html>

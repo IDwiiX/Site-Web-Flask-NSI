@@ -1,0 +1,170 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+}
+
+
+
+/* Tête de page */
+
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+    width: 150px;
+}
+
+section.top-page{
+    background: url('../data/bg.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+nav.nav{
+    display: flex;
+    list-style: none;
+    width: 800px;
+    margin-left: 550px;
+}
+
+nav.nav li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+nav.nav li:hover a{
+    color: rgb(134, 179, 194);
+    background-color: whitesmoke;
+    transition: 0.3s all;
+}
+
+
+
+
+
+/* Page de bienvenue */
+
+.landing-page{
+    padding: 50px 80px;
+    position: relative;
+}
+
+
+.big-title{
+    color: whitesmoke;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60%;
+}
+
+
+
+
+
+/* Page de présentation */
+
+.section-title{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    position: relative;
+    margin-top: 150px;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #4e39b8;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    height: 75vh;
+    margin-top: 75px;
+}
+
+.presentation{
+    box-shadow: 0 0 15px #4e39b8;
+    background-color: lightgrey;
+    font-weight: 600;
+}
+
+
+
+
+/* Payement */
+
+.Payement{
+    margin-top: 200px;
+}
+
+nav.bouton-payement{
+    display: flex;
+    list-style: none;
+    width: 800px;
+    margin-left: 370px;
+}
+
+nav.bouton-payement li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: #4e39b8;
+}
+
+nav.bouton-payement li:hover a{
+    color: #4e39b8;
+    background-color: whitesmoke;
+    transition: 0.3s all;
+}
+
+
+
+
+
+
+/* Pied de page */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+    background-color: black;
+}
+
+footer a.cgv{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 15px;
+}
+
+footer .copyright{
+    color :whitesmoke;
+    margin: 15px;
+}
+
+footer a.cgv:hover{
+    text-decoration: underline whitesmoke;
+    transition: 1s all;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/styles-page-spécifique.css">
+
+        <title>La formation Python</title>
+        <link rel="Icon du site" href="data/icon-site.png">
+        <script src="https://kit.fontawesome.com/64cb0e33c2.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <!-- Haut de page -->
+        <section class="top-page">
+            <header class="header">
+                <img src="data/logo.png" alt="Logo du site : MED ALI TECH">
+                <nav class="nav">
+                    <li>
+                        <a href="index.html" data-text="Accueil">Accueil</a>
+                    </li>
+                </nav>
+            </header>
+
+            <div class="landing-page">
+                <h1 class="big-title">Formations en ligne en informatique </h1>
+            </div>
+
+
+        <!-- Introduction et présentation -->
+        <section class="Introduction" id="Introduction">
+            <h2 class="section-title">Initiez-vous au python avant de l'acheter</h2>
+            <div class="presentation">
+                <p>Python est un langage de programmation populaire qui a été créé en 1991 par Guido van Rossum. Il est apprécié pour sa syntaxe claire et concise, qui facilite la lecture et l'écriture de code. Python est utilisé dans de nombreux domaines, notamment la science des données, l'apprentissage automatique, la sécurité informatique, le développement Web et bien plus encore.</p>
+               
+                <h2>Exemple de code Python</h2>
+                <pre>
+                    <code>
+                        1- def fonction(): (On définit la fonction aisnsi que ses variables)
+                                nom = "Ali"
+                                age = 16
+                                taille = 1.81
+                          Le mot "print" permet d'afficher le contenu de la variable
+                                print("Bonjour " + nom + "!")
+                                print("Tu as " + str(age) + " ans et tu mesures " + str(taille) + "m.")
+
+
+                        2- Conditions et boucles
+                        if age < 18:
+                            print("Tu es encore mineur.")
+                        elif age >= 18 and age < 30:
+                            print("Tu es jeune adulte.")
+
+
+                        3- Faire un parcours par indice, cela permet de montrer les chiffres de 0 à 4    
+                        for i in range(5):
+                            print(i)
+
+
+                        4-Une addition simple
+                        def ajouter(x, y):
+                        return x + y
+                        print(ajouter(3, 5)) ==> Cela affiche 8
+                    </code>
+                </pre>
+                <p>Ces codes Python définissent des variables, affichent des messages à l'utilisateur, utilisent des conditions et des boucles pour prendre des décisions, et définissent une fonction pour effectuer une opération mathématique simple. Ces fonctionnalités sont parmi les éléments les plus fondamentaux de Python, mais il existe de nombreuses autres fonctionnalités plus avancées et des bibliothèques spécialisées pour de nombreux domaines d'application différents.</p>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/HWxBtxPBCAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <!-- Le bouton payer qui ne redirige vers rien -->
+        <section class="Payement">
+            <nav class="bouton-payement">
+                <li>
+                    <a href="" data-text="Achetez la formation">Achetez la formation complète pour 999 DHS</a>
+                </li>
+            </nav>
+        </section>
+
+
+        <!-- Pied de Page -->
+        <footer>
+            <p class="copyright">&copy; 2023 - ProjetNSI - Tous droits réservés</p>
+            <a href="CGV.html" class="cgv">Conditions générales de vente</a>
+        </footer>
+    </body>
+</html>

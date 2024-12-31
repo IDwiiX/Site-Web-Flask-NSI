@@ -1,0 +1,365 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+}
+
+
+
+
+/* Tête de page */
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+    width: 150px;
+}
+
+section.top-page{
+    background: url('../data/bg.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+
+
+
+/* Page de bienvenue */
+
+.landing-page{
+    padding: 50px 80px;
+    position: relative;
+}
+
+
+.big-title{
+    color: whitesmoke;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60%;
+}
+
+.scroll-down{
+    color: whitesmoke;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+    font-weight: 600;
+}
+
+.scroll-down:hover{
+    text-decoration: underline whitesmoke;
+    transition: 1s all;
+}
+
+
+
+
+/* Menu de navigation */
+
+nav.nav{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    width: 800px;
+    margin-left: 200px;
+}
+
+nav.nav li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav.nav li:hover a{
+    color: rgb(134, 179, 194);
+    background-color: whitesmoke;
+    transition: 0.3s all;
+}
+
+
+
+
+/* Services */
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-icon{
+    font-size: 50px;
+    color: #4e39b8;
+}
+
+.service-detail{
+    font-weight: 900;
+    width: 200px;
+    text-align: center;
+
+}
+
+
+
+
+/* Meilleures formations */
+
+.section-title{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #4e39b8;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+
+.best-formation{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.best-items{
+    margin: 100px;
+
+}
+
+
+.no-grid{
+    min-height: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+
+.formation1{
+    background-image: url('../data/formation1.png');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px blueviolet;
+    background-size: contain
+}
+
+.formation2{
+    background-image: url('../data/formation2.png');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px blueviolet;
+    background-size: contain;
+}
+
+.formation3{
+    background-image: url('../data/formation3.png');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px blueviolet;
+    background-size: contain;
+}
+
+.formation4{
+    background-image: url('../data/formation4.png');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px blueviolet;
+    background-size: contain;
+}
+
+.formation-box::before {
+    content: "En savoir plus";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFFDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100%;
+    transition: left 0.4s;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.formation-box:hover::before {
+    left: 0;
+}
+
+
+.formation-details{
+    background-color: lightgrey;
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    padding: 5px 15px;
+}
+
+.formation-name{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 3px;
+}
+
+.formation-price{
+    color: #4e39b8;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 3px;
+}
+
+.formation-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    height: 500px;
+    flex: 1;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* Toutes les formations */
+
+.all-formation{
+    margin: 100px;
+}
+
+
+.formation-grid{
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+
+
+.formation-grid1{
+    background-image: url('../data/formation-grid1.png');
+    width: 700px;
+    height: 800px;
+    background-size: contain;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.formation-grid2{
+    background-image: url('../data/formation-grid2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 659px;
+    grid-column: 3/5;
+}
+
+.formation-grid3{
+    background-image: url('../data/formation-grid3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 659px;
+    grid-column: 3/5;
+}
+
+.formation-grid4{
+    background-image: url('../data/formation-grid4.jpg');
+    background-size: cover;
+    background-position: right;
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.formation-grid5{
+    background-image: url('../data/formation-grid5.jpg');
+    grid-row: 3/5;
+    grid-column: 2/4;
+}
+
+.formation-grid6 {
+    background-image: url('../data/formation-grid6.png');
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+
+
+
+
+/* Pied de page */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+    background-color: black;
+}
+
+footer a.cgv{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 15px;
+}
+
+footer .copyright{
+    color :whitesmoke;
+    margin: 15px;
+}
+
+footer a.cgv:hover{
+    text-decoration: underline whitesmoke;
+    transition: 1s all;
+}
+
+
+
+
+/* Conditions générales de vente */
+
+
+h1.title-cgv{
+    text-decoration: underline 2px black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 2px solid darkblue;
+}
+  
+th {
+    background-color: darkgrey;
+}
